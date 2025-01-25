@@ -26,5 +26,7 @@ python game_process.py
 
 ## 数据说明
 game中每条数据是一个用户的推荐序列，输入是"history_movie_id"：用户看的历史电影id序列，模型预测结果为"movie_id"
+
 movie中每条数据是一个用户的观看序列，输入是"history_item_id"：用户看的历史video id序列，模型预测结果为"item_id"
-生成train.json, valid_5000.json, test_5000.json三个文件，其中train.json只需要random的sample 1024个样本进行训练，valid_5000.json是验证集, test_5000.json是测试集
+
+每个数据集脚本生成train.json, valid_5000.json, test_5000.json三个文件，其中train.json只需要random的sample 1024个样本进行训练，valid_5000.json是验证集, test_5000.json是测试集
